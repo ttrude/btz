@@ -1,3 +1,72 @@
-<html>
-  Test
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mein Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Max Mustermann</h1>
+        <p>Webentwickler &amp; Designer</p>
+        <nav>
+          <ul>
+            <li><a href="#about">Über mich</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="about" class="container">
+        <h2>Über mich</h2>
+        <p>
+          Hallo! Ich bin Max, ein leidenschaftlicher Webentwickler mit Fokus auf moderne, responsive Webseiten und kreative Designs. Ich liebe es, innovative Lösungen zu entwickeln und neue Technologien auszuprobieren.
+        </p>
+      </section>
+      <section id="projects" class="container">
+        <h2>Projekte</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Projekt A</h3>
+            <p>Eine moderne Landingpage für ein Startup.</p>
+            <a href="#">Mehr erfahren</a>
+          </div>
+          <div class="project-card">
+            <h3>Projekt B</h3>
+            <p>Ein responsives Portfolio-Template.</p>
+            <a href="#">Mehr erfahren</a>
+          </div>
+          <div class="project-card">
+            <h3>Projekt C</h3>
+            <p>Eine interaktive Web-App für Aufgabenverwaltung.</p>
+            <a href="#">Mehr erfahren</a>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="container">
+        <h2>Kontakt</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Nachricht</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Absenden</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        &copy; 2025 Max Mustermann
+      </div>
+    </footer>
+  </body>
 </html>
