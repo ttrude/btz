@@ -3,76 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bleib treu deinen Zielen</title>
+    <title>Jutebeutel – Nachhaltig & Stylisch</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header>
-      <div class="container">
-        <h1>Bleib treu deinen Zielen</h1>
-        <p>Personalisierbare Jutebeutel</p>
+      <div class="container header-flex">
+        <h1>Jutebeutel</h1>
         <nav>
           <ul>
-            <li><a href="#about">Über uns</a></li>
-            <li><a href="#projects">Social Media</a></li>
+            <li><a href="#about">Über das Produkt</a></li>
+            <li><a href="#features">Eigenschaften</a></li>
+            <li><a href="#buy">Jetzt kaufen</a></li>
             <li><a href="#contact">Kontakt</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
+      <section id="hero" class="hero-section">
+        <div class="container hero-flex">
+          <div class="hero-text">
+            <h2>Der perfekte Jutebeutel für jeden Tag</h2>
+            <p>
+              Umweltfreundlich, robust und individuell – unser Jutebeutel ist dein idealer Begleiter für Einkauf, Uni oder Freizeit. Setze ein Statement für Nachhaltigkeit und Stil!
+            </p>
+            <a href="#buy" class="cta-btn">Jetzt bestellen</a>
+          </div>
+          <div class="hero-img">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Jutebeutel Produktfoto" />
+          </div>
+        </div>
+      </section>
       <section id="about" class="container">
-        <h2>Über uns</h2>
+        <h2>Über das Produkt</h2>
         <p>
-          Unsere Jutebeutel sind nicht nur umweltfreundlich, sondern auch
-          individuell gestaltbar. Perfekt für den täglichen Gebrauch oder als
-          Geschenk. Wir bieten eine Vielzahl von Designs und die Möglichkeit,
-          deinen eigenen Text hinzuzufügen. Unsere Beutel sind aus 100%
-          Baumwolle und in verschiedenen Größen erhältlich. Ideal für den
-          Einkauf, die Uni oder als modisches Accessoire. Unterstütze nachhaltige
-          Mode und zeige deine Persönlichkeit mit unseren einzigartigen
-          Jutebeuteln.
+          Unser Jutebeutel besteht aus 100% Bio-Baumwolle, ist langlebig und waschbar. Mit seinem modernen Design und der Möglichkeit zur Personalisierung ist er das perfekte Accessoire für alle, die Wert auf Nachhaltigkeit und Individualität legen.
         </p>
       </section>
-      <section id="projects" class="container">
+      <section id="features" class="container features-section">
         <h2>Eigenschaften</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>Umweltfreundlich</h3>
-            <p>Unsere Jutebeutel sind umweltfreundlich und nachhaltig.</p>
-            <a href="#">Mehr erfahren</a>
+        <div class="features-grid">
+          <div class="feature-card">
+            <span>🌱</span>
+            <h3>Nachhaltig</h3>
+            <p>Aus umweltfreundlicher Bio-Baumwolle gefertigt.</p>
           </div>
-          <div class="project-card">
-            <h3>Personalisierbare Designs</h3>
-            <p>Zeige der Welt, wer du bist und was du willst.</p>
-            <a href="#">Mehr erfahren</a>
+          <div class="feature-card">
+            <span>🖌️</span>
+            <h3>Personalisierbar</h3>
+            <p>Wähle dein eigenes Design oder Text für den Beutel.</p>
           </div>
-          <div class="project-card">
-            <h3>In drei Tagen bei dir</h3>
-            <p>Wir liefern innerhalb von drei Tagen nach ganz Europa.</p>
-            <a href="#">Mehr erfahren</a>
+          <div class="feature-card">
+            <span>💪</span>
+            <h3>Robust & Waschbar</h3>
+            <p>Hält auch schweren Einkäufen stand und ist leicht zu reinigen.</p>
           </div>
+          <div class="feature-card">
+            <span>🚚</span>
+            <h3>Schneller Versand</h3>
+            <p>Lieferung innerhalb von 3 Werktagen europaweit.</p>
+          </div>
+        </div>
+      </section>
+      <section id="buy" class="container buy-section">
+        <h2>Jetzt kaufen</h2>
+        <div class="buy-flex">
+          <div class="buy-img">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Jutebeutel kaufen" />
+          </div>
+          <form class="buy-form">
+            <label for="design">Design wählen</label>
+            <select id="design" name="design" required>
+              <option value="">Bitte wählen…</option>
+              <option value="classic">Klassisch</option>
+              <option value="modern">Modern</option>
+              <option value="custom">Eigenes Design</option>
+            </select>
+            <label for="quantity">Anzahl</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required />
+            <label for="personal">Personalisierung (optional)</label>
+            <input type="text" id="personal" name="personal" placeholder="Dein Text oder Name" />
+            <button type="submit">In den Warenkorb</button>
+          </form>
         </div>
       </section>
       <section id="contact" class="container">
         <h2>Kontakt</h2>
-        <form>
+        <form class="contact-form">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
-
           <label for="email">E-Mail</label>
           <input type="email" id="email" name="email" required />
-
           <label for="message">Nachricht</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
+          <textarea id="message" name="message" rows="4" required></textarea>
           <button type="submit">Absenden</button>
         </form>
       </section>
     </main>
     <footer>
       <div class="container">
-        &copy; 2025 BTZ Team
+        &copy; 2025 Jutebeutel Shop – Nachhaltig & Stylisch
       </div>
     </footer>
   </body>

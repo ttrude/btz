@@ -6,20 +6,21 @@ body {
 }
 
 header {
-  background: #222;
+  background: #2e7d32;
   color: #fff;
-  padding: 2rem 0 1rem 0;
+  padding: 1.5rem 0;
+}
+
+.header-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-header p {
-  margin: 0.5rem 0 1rem 0;
-  font-size: 1.2rem;
-  color: #bbb;
+  margin: 0 0 0.5rem 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
 }
 
 nav ul {
@@ -27,7 +28,7 @@ nav ul {
   padding: 0;
   display: flex;
   gap: 2rem;
-  justify-content: center;
+  margin: 0;
 }
 
 nav a {
@@ -38,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff9800;
+  color: #ffd600;
 }
 
 .container {
@@ -47,67 +48,127 @@ nav a:hover {
   padding: 2rem 1rem;
 }
 
-main section {
+.hero-section {
+  background: linear-gradient(90deg, #e8f5e9 60%, #fff 100%);
+  padding: 2.5rem 0 2rem 0;
+}
+
+.hero-flex {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 320px;
+}
+
+.hero-text h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #2e7d32;
+}
+
+.hero-text p {
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+  background: #2e7d32;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.cta-btn:hover {
+  background: #388e3c;
+}
+
+.hero-img img {
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(46,125,50,0.12);
+}
+
+.features-section {
   background: #fff;
-  margin-bottom: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-h2 {
-  margin-top: 0;
-  color: #ff9800;
-}
-
-.projects-grid {
+.features-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-.project-card {
-  background: #f1f1f1;
+.feature-card {
+  background: #f1f8e9;
   border-radius: 6px;
-  padding: 1rem;
-  flex: 1 1 250px;
-  min-width: 220px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  padding: 1.2rem;
+  flex: 1 1 180px;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(46,125,50,0.04);
 }
 
-.project-card h3 {
-  margin-top: 0;
+.feature-card span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-.project-card a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #ff9800;
-  text-decoration: none;
-  font-weight: bold;
+.buy-section {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.project-card a:hover {
-  text-decoration: underline;
+.buy-flex {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-form {
+.buy-img img {
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46,125,50,0.08);
+}
+
+.buy-form {
+  flex: 1 1 260px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-input, textarea {
+.buy-form label {
+  font-weight: 500;
+}
+
+.buy-form input,
+.buy-form select {
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid #bdbdbd;
   border-radius: 4px;
   font-size: 1rem;
 }
 
-button[type="submit"] {
-  background: #ff9800;
+.buy-form button {
+  background: #2e7d32;
   color: #fff;
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 4px;
   font-size: 1rem;
   font-weight: bold;
@@ -115,20 +176,58 @@ button[type="submit"] {
   transition: background 0.2s;
 }
 
-button[type="submit"]:hover {
-  background: #e68900;
+.buy-form button:hover {
+  background: #388e3c;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-form button:hover {
+  background: #388e3c;
 }
 
 footer {
-  background: #222;
+  background: #2e7d32;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
   font-size: 0.95rem;
+  margin-top: 2rem;
 }
 
-@media (max-width: 700px) {
-  .projects-grid {
+@media (max-width: 900px) {
+  .hero-flex, .buy-flex, .features-grid {
     flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-img img, .buy-img img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: block;
   }
 }
